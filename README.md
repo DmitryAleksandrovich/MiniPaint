@@ -1,1 +1,1 @@
-MiniPaint
+Implementation of a graphical editor "Mini-paint". This program can draw three figures: rectangle, triangle and ellips. Used Strategy pattern for connect the interface figures with the form of the program through the class Scene. Working with graphics by using Qt framework.
