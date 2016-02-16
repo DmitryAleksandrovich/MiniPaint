@@ -1,7 +1,4 @@
 #include <QApplication>
-#include <QSpinBox>
-#include <QSlider>
-#include <QHBoxLayout>
 #include "mainwindow.h"
 
 int main(int argc, char *argv[])

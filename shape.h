@@ -1,11 +1,6 @@
 #ifndef SHAPE_H
 #define SHAPE_H
 #include <QPainter>
-#include <QPoint>
-#include <QSize>
-#include <QRect>
-#include <QPaintEvent>
-#include <QWidget>
 #include <QGraphicsItem>
 
 class Shape : public QObject, public QGraphicsItem
