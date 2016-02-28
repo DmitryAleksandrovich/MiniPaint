@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/ellipse.gif</file>
+        <file>img/rectangle.jpg</file>
+        <file>img/triangle.gif</file>
+        <file>img/ClearScreen.jpg</file>
+    </qresource>
+</RCC>

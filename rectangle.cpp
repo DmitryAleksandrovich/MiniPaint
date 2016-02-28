@@ -7,6 +7,5 @@ Rectangle::Rectangle(QObject *parent) : Shape(parent)
 
 void Rectangle::paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*)
 {
-    painter->drawRoundedRect(getFirstX(), getFirstY(), getSecondX(), getSecondY(), 0, 0);
+    painter->drawRect(getFirstX(), getFirstY(), getSecondX(), getSecondY());
 }
-
