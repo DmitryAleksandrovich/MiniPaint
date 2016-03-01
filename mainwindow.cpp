@@ -7,11 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    scene = new Scene(this);
+    scene = new Scene(this); // Create scene for rendering figures
     scene->setSceneRect(0, 0, MainWindow::width(), MainWindow::height());
     QGraphicsView* view = new QGraphicsView(this);
-    view->setScene(scene);
-    setCentralWidget(view);
+    view->setScene(scene); // Set the scene
+    setCentralWidget(view); // Set the widget on the full screen
 }
 
 MainWindow::~MainWindow()
@@ -19,6 +19,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+/* Scene redraws when the window is resized*/
 void MainWindow::resizeEvent(QResizeEvent* event)
 {
     scene->setSceneRect(0,0, MainWindow::width(), MainWindow::height());

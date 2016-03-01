@@ -23,10 +23,10 @@ private:
     Shape* item;
     Mode mode;
     int shapeName;
-    float startCoordSceneX;
-    float startCoordSceneY;
-    float setScreenPosX;
-    float setScreenPosY;
+    float startCoordSceneX; // Coord X for resizing
+    float startCoordSceneY; // Coord Y for resizing
+    float setScreenPosX; // Coord X for scale
+    float setScreenPosY; // Coord Y for scale
     enum{vScale = 2};
 public:
     enum{rectangle = 1};

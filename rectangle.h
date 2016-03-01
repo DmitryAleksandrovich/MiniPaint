@@ -6,7 +6,7 @@ class Rectangle : public Shape
 {
 public:
     Rectangle(QObject *parent = 0);
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*);
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*); // Draw rectangle
 };
 
 #endif // RECTANGLE_H

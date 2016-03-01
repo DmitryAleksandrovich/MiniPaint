@@ -7,7 +7,7 @@ class Shape : public QObject, public QGraphicsItem
 {
 public:
     Shape(QObject *parent = 0);
-    QRectF boundingRect() const;
+    QRectF boundingRect() const; // The function defines the outer bounds of the item as a rectangle
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*) = 0;
     void setFirstX(float fX);
     void setFirstY(float fY);

@@ -6,7 +6,7 @@ class Ellipse : public Shape
 {
 public:
     Ellipse(QObject *parent = 0);
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*);
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*); // Draw ellips
 };
 
 #endif // ELLIPSE_H

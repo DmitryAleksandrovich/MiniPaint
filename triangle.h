@@ -6,6 +6,7 @@ class Triangle : public Shape
 {
 public:
     Triangle(QObject *parent = 0);
+    /* Draw triangle on three points */
     void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*);
 private:
     enum{countPoints = 3};
