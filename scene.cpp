@@ -9,8 +9,8 @@ Scene::Scene(QObject *parent) : QGraphicsScene(parent), shapeName(1), mode(isDra
 
 void Scene::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
-    if(((event->scenePos().x() >= setScreenPosX) && event->scenePos().x() <= setScreenPosX+2) &&
-          ((event->scenePos().y() >= setScreenPosY) && event->scenePos().y() <= setScreenPosY+2))
+    if(((event->scenePos().x() >= setScreenPosX) && event->scenePos().x() <= setScreenPosX + vScale) &&
+          ((event->scenePos().y() >= setScreenPosY) && event->scenePos().y() <= setScreenPosY + vScale))
     {
         mode = isScale;
     }
@@ -22,13 +22,13 @@ void Scene::mousePressEvent(QGraphicsSceneMouseEvent* event)
     {
         switch (shapeName)
         {
-        case 1:
+        case rectangle:
             item = new Rectangle(this);
             break;
-        case 2:
+        case triangle:
             item = new Triangle(this);
             break;
-        case 3:
+        case ellips:
             item = new Ellipse(this);
             break;
         default:

@@ -27,17 +27,17 @@ void MainWindow::resizeEvent(QResizeEvent* event)
 
 void MainWindow::on_actionCreateRectangle_triggered()
 {
-    scene->SetFigure(1);
+    scene->SetFigure(Scene::rectangle);
 }
 
 void MainWindow::on_actionCreateTriangle_triggered()
 {
-    scene->SetFigure(2);
+    scene->SetFigure(Scene::triangle);
 }
 
 void MainWindow::on_actionCreateEllipse_triggered()
 {
-    scene->SetFigure(3);
+    scene->SetFigure(Scene::ellips);
 }
 
 void MainWindow::on_actionClearScreen_triggered()

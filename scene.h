@@ -27,6 +27,11 @@ private:
     float startCoordSceneY;
     float setScreenPosX;
     float setScreenPosY;
+    enum{vScale = 2};
+public:
+    enum{rectangle = 1};
+    enum{triangle = 2};
+    enum{ellips = 3};
 public:
     void SetFigure(int idFigure);
 };

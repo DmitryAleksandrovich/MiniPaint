@@ -12,5 +12,5 @@ void Triangle::paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget
         QPointF(getFirstX() - (getSecondX() - getFirstX()), getSecondY()),
         QPointF(getSecondX(), getSecondY())
     };
-    painter->drawPolygon(points, 3);
+    painter->drawPolygon(points, countPoints);
 }

@@ -22,6 +22,8 @@ private:
     float firstY;
     float secondX;
     float secondY;
+    enum{firstCoord = 1};
+    enum{secondCoord = 2};
 };
 
 #endif // SHAPE_H
