@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include <QMainWindow>
 #include <QAction>
+#include <QResizeEvent>
 #include "scene.h"
 
 namespace Ui {
@@ -15,7 +16,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
+    void resizeEvent(QResizeEvent* event);
 private:
     Ui::MainWindow *ui;
     Scene* scene;

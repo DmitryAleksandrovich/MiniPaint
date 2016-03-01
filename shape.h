@@ -9,6 +9,8 @@ public:
     Shape(QObject *parent = 0);
     QRectF boundingRect() const;
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem*, QWidget*) = 0;
+    void setFirstX(float fX);
+    void setFirstY(float fY);
     void setSecondX(float sX);
     void setSecondY(float sY);
     float getFirstX() const;

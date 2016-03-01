@@ -19,6 +19,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::resizeEvent(QResizeEvent* event)
+{
+    scene->setSceneRect(0,0, MainWindow::width(), MainWindow::height());
+    QMainWindow::resizeEvent(event);
+}
+
 void MainWindow::on_actionCreateRectangle_triggered()
 {
     scene->SetFigure(1);

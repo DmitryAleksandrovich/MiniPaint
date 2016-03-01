@@ -11,6 +11,15 @@ QRectF Shape::boundingRect() const
     return QRectF(-10, -20, 20, 40);
 }
 
+void Shape::setFirstX(float fX)
+{
+    firstX = fX;
+}
+
+void Shape::setFirstY(float fY)
+{
+    firstY = fY;
+}
 
 void Shape::setSecondX(float sX)
 {

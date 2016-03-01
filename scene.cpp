@@ -9,8 +9,8 @@ Scene::Scene(QObject *parent) : QGraphicsScene(parent), shapeName(1), mode(isDra
 
 void Scene::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
-    if(((event->scenePos().x() >= setScreenPosX-2) && event->scenePos().x() <= setScreenPosX+2) &&
-          ((event->scenePos().y() >= setScreenPosY-2) && event->scenePos().y() <= setScreenPosY+2))
+    if(((event->scenePos().x() >= setScreenPosX) && event->scenePos().x() <= setScreenPosX+2) &&
+          ((event->scenePos().y() >= setScreenPosY) && event->scenePos().y() <= setScreenPosY+2))
     {
         mode = isScale;
     }
@@ -48,7 +48,6 @@ void Scene::mouseMoveEvent(QGraphicsSceneMouseEvent* event)
     item->setSecondX(event->scenePos().x() - startCoordSceneX);
     item->setSecondY(event->scenePos().y() - startCoordSceneY);
     update(QRectF(0,0,width(), height()));
-
 }
 
 void Scene::SetFigure(int idFigure)
