@@ -11,6 +11,13 @@ enum Mode
     isScale
 };
 
+enum
+{
+    rectangle = 1,
+    triangle,
+    ellips
+};
+
 class Scene : public QGraphicsScene
 {
     Q_OBJECT
@@ -28,10 +35,6 @@ private:
     float setScreenPosX; // Coord X for scale
     float setScreenPosY; // Coord Y for scale
     enum{vScale = 2};
-public:
-    enum{rectangle = 1};
-    enum{triangle = 2};
-    enum{ellips = 3};
 public:
     void SetFigure(int idFigure);
 };
