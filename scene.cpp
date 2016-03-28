@@ -3,7 +3,8 @@
 #include "triangle.h"
 #include "ellipse.h"
 
-Scene::Scene(QObject *parent) : QGraphicsScene(parent), shapeName(1), mode(isDraw)
+Scene::Scene(Shape *sItem, QObject *parent) : QGraphicsScene(parent), shapeName(1), mode(isDraw),
+    item(sItem)
 {
 }
 

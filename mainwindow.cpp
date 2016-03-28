@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    scene = new Scene(this); // Create scene for rendering figures
+    scene = new Scene(new Rectangle, this); // Create scene for rendering figures
     scene->setSceneRect(0, 0, MainWindow::width(), MainWindow::height());
     QGraphicsView* view = new QGraphicsView(this);
     view->setScene(scene); // Set the scene

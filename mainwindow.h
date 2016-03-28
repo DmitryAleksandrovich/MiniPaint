@@ -4,6 +4,7 @@
 #include <QAction>
 #include <QResizeEvent>
 #include "scene.h"
+#include "rectangle.h"
 
 namespace Ui {
 class MainWindow;
