@@ -23,7 +23,7 @@ private:
     enum Coord
     {
         firstCoord = 1,
-        secondCoord = 2
+        secondCoord
     };
 };
 
