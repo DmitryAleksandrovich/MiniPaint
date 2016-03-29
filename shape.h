@@ -5,6 +5,7 @@
 
 class Shape : public QObject, public QGraphicsItem
 {
+    Q_OBJECT // In the future, for scalability
 public:
     Shape(QObject *parent = 0);
     QRectF boundingRect() const override; // The function defines the outer bounds of the item as a rectangle
